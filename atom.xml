@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Mine joy</title>
+  <title>MineJoy</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://minejoy.github.io/"/>
-  <updated>2018-03-16T07:19:59.885Z</updated>
+  <updated>2018-03-25T08:29:48.735Z</updated>
   <id>http://minejoy.github.io/</id>
   
   <author>
@@ -17,108 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的第一篇博客</title>
-    <link href="http://minejoy.github.io/2018/03/15/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://minejoy.github.io/2018/03/15/我的第一篇博客/</id>
-    <published>2018-03-15T14:32:33.000Z</published>
-    <updated>2018-03-16T07:19:59.885Z</updated>
+    <title>Markdown 学习</title>
+    <link href="http://minejoy.github.io/2018/03/25/markdown-learning/"/>
+    <id>http://minejoy.github.io/2018/03/25/markdown-learning/</id>
+    <published>2018-03-25T06:31:47.000Z</published>
+    <updated>2018-03-25T08:29:48.735Z</updated>
     
-    <content type="html"><![CDATA[<p>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.<br>you are my joy, I love you with my life.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;you are my joy, I love you with my life.&lt;br&gt;you are my joy, I love you with my life.&lt;br&gt;you are my joy, I love you with my life.&lt;br&gt;you a
-      
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://minejoy.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="学习" scheme="http://minejoy.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello,Hexo</title>
-    <link href="http://minejoy.github.io/2018/03/15/%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%A5%BD%E5%A4%84/"/>
-    <id>http://minejoy.github.io/2018/03/15/写博客的好处/</id>
-    <published>2018-03-14T16:55:43.000Z</published>
-    <updated>2018-03-16T03:03:15.926Z</updated>
-    
-    <content type="html"><![CDATA[<p>使用Hexo,是非常简单的一件事。测试文本<br><code>hello</code></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p><a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin" target="_blank"><strong>Markdown </strong></a>是一种轻量级标记语言，它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的<a href="https://baike.baidu.com/item/XHTML/316621?fr=aladdin/" target="_blank"> XHTML</a>（或者<a href="https://baike.baidu.com/item/XHTML/316621?fr=aladdin/" target="_blank"> HTML</a>） 文档”。本篇文章主要参考的是 GitHub 风格的语法 <a href="https://github.github.com/gfm/" target="_blank"> GitHub Flavored Markdown</a>，以下是自己整理的一些内容，方便查阅。</p><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><table><thead><tr><th>样式 (style)</th><th>语法 (syntax)</th><th>例子 (example)</th><th>效果 (output)</th></tr></thead><tbody><tr><td>标题</td><td><code>## Header</code></td><td><code>## 两个井号表示二级标题</code></td><td><h2>两个井号表示二级标题</h2></td></tr><tr><td>斜体</td><td><code>*Italic*</code></td><td><code>*这是斜体文字*</code></td><td><i>这是斜体文字</i></td></tr><tr><td>粗体</td><td><code>**Strong**</code></td><td><code>**这是粗体文字**</code></td><td><strong>这是粗体文字</strong></td></tr><tr><td>删除线</td><td><code>~~Strikethrough~~</code></td><td><code>~~带删除线字体~~</code></td><td><del>带删除线字体</del></td></tr><tr><td>引用</td><td><code>> Blockquote </code></td><td><code>> 这是引用文本 </code></td><td><blockquote>这是引用文本</blockquote></td></tr><tr><td>链接</td><td><code>[Name](URL)</code></td><td><code>[我的博客地址](<a href="http://www.minejoy.me" target="_blank" rel="noopener">http://www.minejoy.me</a>)</code></td><td><a href="http://www.minejoy.me" target="_blank" rel="noopener">我的博客地址</a></td></tr><tr><td>图片插入</td><td><code>![Name](Path)</code></td><td><code>![MineJoy](图片地址 MineJoy)</code></td><td><img src="https://www.dummyimage.com/180x70/000/f00&amp;text=MineJoy" alt="MineJoy"></td></tr><tr><td>有序列表</td><td><code>1. Item 1<br> 2. Item 2<br> 3. Item 3<br> &nbsp;&nbsp;* itme 3a<br> &nbsp;&nbsp;* itme 3b<br> &nbsp;&nbsp;* itme 3c</code></td><td><code>1. 吃饭<br> 2. 睡觉<br> 3. 打豆豆<br> &nbsp;&nbsp;* 一颗痘痘<br> &nbsp;&nbsp;* 两颗痘痘<br> &nbsp;&nbsp;* 三颗痘痘</code></td><td><code><ol><li>吃饭</li><li>睡觉</li><li>打豆豆<ul><li>一颗痘痘</li><li>两颗痘痘</li><li>三颗痘痘</li></ul></li></ol></code></td></tr><tr><td>无序列表</td><td><code>* Item 1<br> * Item 2<br> * Item 3<br> &nbsp;&nbsp;1. itme 3a<br> &nbsp;&nbsp;2. itme 3b<br> &nbsp;&nbsp;3. itme 3c</code><br></td><td><code>* 吃饭<br> * 睡觉<br> * 打豆豆<br> &nbsp;&nbsp;1. 一颗痘痘<br> &nbsp;&nbsp;2. 两颗痘痘<br> &nbsp;&nbsp;3. 三颗痘痘</code></td><td><code><ul><li>吃饭</li><li>睡觉</li><li>打豆豆<ol><li>一颗痘痘</li><li>两颗痘痘</li><li>三颗痘痘</li></ol></li></ul></code></td></tr><tr><td>任务列表</td><td><code>- [x] Text<br>- [ ] Text</code></td><td><code>- [x] 任务完成，-可换为*<br>- [ ] 待办事项，注意加空格</code></td><td><ul style="list-style:none"><li><input checked disabled type="checkbox"> 任务完成，-可换为**</li><li><input disabled type="checkbox"> 待办事项，注意加空格</li></ul></td></tr><tr><td>表格</td><td><br>| 表头 | 表头 | 表头 |<br><br>| —- | —– | —– |<br><br>|tdata|tdata|tdata|<br><br>|tdata|tdata|tdata|<br><br></td><br><td><br>| 表头 | 表头 | 表头 | <br><br>|:—–|:—–:|—–:| <br><br>| 靠左 | 居中 | 靠右 | <br><br>|  左  |  中 |  右   |<br><br></td><td><table><thead><tr><th>标题</th><th>标题</th><th>标题</th><br></tr></thead><br><tbody><br><tr><td style="text-align: left">靠左</td><td style="text-align: center">居中</td><td style="text-align: right">靠右</td></tr><tr><td style="text-align: left">左</td><td style="text-align: center">中</td><td style="text-align: right">右</td></tr></tbody></table></td></tr></tbody></table><h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet#code" target="_blank" rel="noopener">代码块的引入</a>，<a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#using-emoji" target="_blank" rel="noopener">emoji 的引入</a>，@username<br>连翘两个空格加回车可换行，注意空格<br>markdown 里可以直接使用 HTML 标签</p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>我的第一篇博客，花了一天时间总结的 markdown 常用语法。第一次接触 markdown，边学语法边写边总结，顺便也学以致用写成博文。</p><p>学习 markdown 的目的是让自己养成写作的习惯: 一种总结，一种记录，一种分享。</p><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[1]<a href="https://en.wikipedia.org/wiki/Markdown/" target="_blank" rel="noopener">维基百科</a><br>[2]<a href="https://github.github.com/gfm/" target="_blank" rel="noopener">GitHub Flavored Markdown</a><br>[3]<a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/" target="_blank" rel="noopener">Writing on GitHub</a></p><p><table></table></p><style>body {  font-size: 16px;}table {  width: 100%;  border-collapse: collapse;  border: solid #ddd;  border-width: 1px 1px 2px;  margin: 1em 0;  -webkit-border-radius: 3px;  -moz-border-radius: 3px;  border-radius: 3px;  background-clip: padding-box;  border-spacing: 0;}th {  color: #325d72;  background-color: #eee;  line-height: 2;}</style>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;使用Hexo,是非常简单的一件事。测试文本&lt;br&gt;&lt;code&gt;hello&lt;/code&gt;&lt;/p&gt;
-
+        &lt;h1 id=&quot;Markdown&quot;&gt;&lt;a href=&quot;#Markdown&quot; class=&quot;headerlink&quot; title=&quot;Markdown&quot;&gt;&lt;/a&gt;Markdown&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://baike.baidu.com/item/markdown
       
     
     </summary>
     
-      <category term="搭建博客" scheme="http://minejoy.github.io/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="软件操作" scheme="http://minejoy.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
     
     
-      <category term="hexo" scheme="http://minejoy.github.io/tags/hexo/"/>
+      <category term="markdown" scheme="http://minejoy.github.io/tags/markdown/"/>
     
-      <category term="github" scheme="http://minejoy.github.io/tags/github/"/>
-    
-      <category term="npm" scheme="http://minejoy.github.io/tags/npm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello,Hexo</title>
-    <link href="http://minejoy.github.io/2018/03/15/Hello-Hexo/"/>
-    <id>http://minejoy.github.io/2018/03/15/Hello-Hexo/</id>
-    <published>2018-03-14T16:55:43.000Z</published>
-    <updated>2018-03-16T12:57:43.545Z</updated>
-    
-    <content type="html"><![CDATA[<p>使用Hexo,是非常简单的一件事。测试文本</p><h2 id="大标题"><a href="#大标题" class="headerlink" title="大标题"></a>大标题</h2><h3 id="小标题1"><a href="#小标题1" class="headerlink" title="小标题1"></a>小标题1</h3><p>   我是小标题1的内容<br>   更多，<a href="https://www.baidu.com" target="_blank" rel="noopener">请参考</a></p><h3 id="小标题2"><a href="#小标题2" class="headerlink" title="小标题2"></a>小标题2</h3><p>   我是小标题2的内容<br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p><h3 id="小标题3"><a href="#小标题3" class="headerlink" title="小标题3"></a>小标题3</h3><p>   我是小标题3的内容</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;使用Hexo,是非常简单的一件事。测试文本&lt;/p&gt;
-&lt;h2 id=&quot;大标题&quot;&gt;&lt;a href=&quot;#大标题&quot; class=&quot;headerlink&quot; title=&quot;大标题&quot;&gt;&lt;/a&gt;大标题&lt;/h2&gt;&lt;h3 id=&quot;小标题1&quot;&gt;&lt;a href=&quot;#小标题1&quot; class=&quot;hea
-      
-    
-    </summary>
-    
-      <category term="搭建博客" scheme="http://minejoy.github.io/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-      <category term="hexo" scheme="http://minejoy.github.io/tags/hexo/"/>
-    
-      <category term="github" scheme="http://minejoy.github.io/tags/github/"/>
-    
-      <category term="npm" scheme="http://minejoy.github.io/tags/npm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://minejoy.github.io/2018/03/14/hello-world/"/>
-    <id>http://minejoy.github.io/2018/03/14/hello-world/</id>
-    <published>2018-03-14T13:14:42.496Z</published>
-    <updated>2018-03-14T13:14:42.496Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
+      <category term="工具" scheme="http://minejoy.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   

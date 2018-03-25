@@ -1,45 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[我的第一篇博客]]></title>
-    <url>%2F2018%2F03%2F15%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.you are my joy, I love you with my life.]]></content>
+    <title><![CDATA[Markdown 学习]]></title>
+    <url>%2F2018%2F03%2F25%2Fmarkdown-learning%2F</url>
+    <content type="text"><![CDATA[MarkdownMarkdown 是一种轻量级标记语言，它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（或者 HTML） 文档”。本篇文章主要参考的是 GitHub 风格的语法 GitHub Flavored Markdown，以下是自己整理的一些内容，方便查阅。 基本语法样式 (style)语法 (syntax)例子 (example)效果 (output)标题## Header## 两个井号表示二级标题两个井号表示二级标题斜体*Italic**这是斜体文字*这是斜体文字粗体**Strong****这是粗体文字**这是粗体文字删除线~~Strikethrough~~~~带删除线字体~~带删除线字体引用> Blockquote > 这是引用文本 这是引用文本链接[Name](URL)[我的博客地址](http://www.minejoy.me)我的博客地址图片插入![Name](Path)![MineJoy](图片地址 MineJoy)有序列表1. Item 1 2. Item 2 3. Item 3 &nbsp;&nbsp;* itme 3a &nbsp;&nbsp;* itme 3b &nbsp;&nbsp;* itme 3c1. 吃饭 2. 睡觉 3. 打豆豆 &nbsp;&nbsp;* 一颗痘痘 &nbsp;&nbsp;* 两颗痘痘 &nbsp;&nbsp;* 三颗痘痘吃饭睡觉打豆豆一颗痘痘两颗痘痘三颗痘痘无序列表* Item 1 * Item 2 * Item 3 &nbsp;&nbsp;1. itme 3a &nbsp;&nbsp;2. itme 3b &nbsp;&nbsp;3. itme 3c* 吃饭 * 睡觉 * 打豆豆 &nbsp;&nbsp;1. 一颗痘痘 &nbsp;&nbsp;2. 两颗痘痘 &nbsp;&nbsp;3. 三颗痘痘吃饭睡觉打豆豆一颗痘痘两颗痘痘三颗痘痘任务列表- [x] Text- [ ] Text- [x] 任务完成，-可换为*- [ ] 待办事项，注意加空格 任务完成，-可换为** 待办事项，注意加空格表格| 表头 | 表头 | 表头 || —- | —– | —– ||tdata|tdata|tdata||tdata|tdata|tdata|| 表头 | 表头 | 表头 | |:—–|:—–:|—–:| | 靠左 | 居中 | 靠右 | | 左 | 中 | 右 |标题标题标题靠左居中靠右左中右 其它代码块的引入，emoji 的引入，@username连翘两个空格加回车可换行，注意空格markdown 里可以直接使用 HTML 标签 结语我的第一篇博客，花了一天时间总结的 markdown 常用语法。第一次接触 markdown，边学语法边写边总结，顺便也学以致用写成博文。 学习 markdown 的目的是让自己养成写作的习惯: 一种总结，一种记录，一种分享。 参考链接[1]维基百科[2]GitHub Flavored Markdown[3]Writing on GitHub body { font-size: 16px; } table { width: 100%; border-collapse: collapse; border: solid #ddd; border-width: 1px 1px 2px; margin: 1em 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-clip: padding-box; border-spacing: 0; } th { color: #325d72; background-color: #eee; line-height: 2; }]]></content>
       <categories>
-        <category>JavaScript</category>
+        <category>软件操作</category>
       </categories>
       <tags>
-        <tag>学习</tag>
+        <tag>markdown</tag>
+        <tag>工具</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello,Hexo]]></title>
-    <url>%2F2018%2F03%2F15%2F%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%A5%BD%E5%A4%84%2F</url>
-    <content type="text"><![CDATA[使用Hexo,是非常简单的一件事。测试文本hello]]></content>
-      <categories>
-        <category>搭建博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello,Hexo]]></title>
-    <url>%2F2018%2F03%2F15%2FHello-Hexo%2F</url>
-    <content type="text"><![CDATA[使用Hexo,是非常简单的一件事。测试文本 大标题小标题1 我是小标题1的内容 更多，请参考 小标题2 我是小标题2的内容 1$ npm install 小标题3 我是小标题3的内容]]></content>
-      <categories>
-        <category>搭建博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F03%2F14%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
