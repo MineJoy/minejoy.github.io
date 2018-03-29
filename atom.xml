@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://minejoy.github.io/"/>
-  <updated>2018-03-29T14:22:53.797Z</updated>
+  <updated>2018-03-29T14:25:04.254Z</updated>
   <id>http://minejoy.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://minejoy.github.io/2018/03/29/BFC/"/>
     <id>http://minejoy.github.io/2018/03/29/BFC/</id>
     <published>2018-03-29T14:18:43.000Z</published>
-    <updated>2018-03-29T14:22:53.797Z</updated>
+    <updated>2018-03-29T14:25:04.254Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="BFC-是什么？"><a href="#BFC-是什么？" class="headerlink" title="BFC 是什么？"></a>BFC 是什么？</h2><blockquote><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context" target="_blank" rel="noopener">块级格式化上下文</a>(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。<br>原始效果：<br><img src="./BFC/塌陷.PNG" alt=""></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="BFC-是什么？"><a href="#BFC-是什么？" class="headerlink" title="BFC 是什么？"></a>BFC 是什么？</h2><blockquote><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context" target="_blank" rel="noopener">块级格式化上下文</a>(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。<br>原始效果：<br><img src="./BFC/塌陷.PNG" alt=""></p></blockquote><p><img src="../images/重叠.PNG" alt=""><br><img src="../images/塌陷.PNG" alt=""></p>]]></content>
     
     <summary type="html">
     
