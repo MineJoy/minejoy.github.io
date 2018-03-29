@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>%2F2018%2F03%2F29%2FBFC%2Fmargin%E9%87%8D%E5%8F%A0%2F</url>
-    <content type="text"><![CDATA[Document #container { width: 500px; border: 10px solid #ccf; } .child { width: 200px; height: 200px; border: 10px solid #33f; float: left; font-size: 22px; } float: left; float: left;]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2018%2F03%2F29%2FBFC%2F%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80%2F</url>
-    <content type="text"><![CDATA[Document body { width: 500px; position: relative; } .aside { width: 100px; height: 180px; float: left; background: #33f; } .main { height: 200px; background: #ccf; overflow: hidden; } float: left; 内容区被覆盖了一部分]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2018%2F03%2F29%2FBFC%2F%E6%92%91%E5%BC%80%E7%88%B6%E5%AE%B9%E5%99%A8%2F</url>
-    <content type="text"><![CDATA[Document #container { width: 500px; border: 10px solid #ccf; } .child { width: 200px; height: 200px; border: 10px solid #33f; float: left; font-size: 22px; } float: left; float: left;]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[BFC]]></title>
     <url>%2F2018%2F03%2F29%2FBFC%2F</url>
     <content type="text"><![CDATA[BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。 生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed overflow 不为 visible display为inline-block, table-cell, table-caption, flex, inline-flex 其它 BFC 布局规则 BFC 是页面上一个独立的容器，里面的子元素不会再布局上影响到外面的元素，反之也是如此 创建了 BFC 的元素不会与浮动元素重叠 计算 BFC 高度时，浮动元素也参与计算 BFC 中，每一个元素左外边与包含块的左边相接触（对于从左往右的格式化，否则相反），即使存在浮动 两个相邻的普通流中的块框在垂直位置的空白边会发生折叠现象。也就是处于同一个BFC中的两个垂直窗口的margin会重叠。 BFC 应用撑开父容器代码: 123456789101112131415161718&lt;style&gt; #container &#123; width: 500px; border: 10px solid #aaf; &#125; .child &#123; width: 200px; height: 200px; border: 10px solid #88f; float: left; &#125;&lt;/style&gt;&lt;body"&gt; &lt;div id="container"&gt; &lt;div class="child"&gt;float: left;&lt;/div&gt; &lt;div class="child"&gt;float: left;&lt;/div&gt; &lt;/div&gt;&lt;/body&gt; 原始效果：为了解决父容器塌陷的问题，可以让其生成 BFC，添加如下代码 #container { overflow: hidden; } 处理后效果： 两栏布局代码： ```html &lt;style&gt; body { width: 500px; position: relative; } .sidebar { width: 100px; height: 180px; float: left; background: #33f; } .content { height: 200px; background: #ccf; } &lt;/style&gt; &lt;body&gt; &lt;div class=&quot;sidebar&quot;&gt;float: left;&lt;/div&gt; &lt;div class=&quot;content&quot;&gt;内容区被覆盖了一部分&lt;/div&gt; &lt;/body&gt; ``` 原始效果： 可以生成 BFC，实现两栏布局，添加如下代码： ```css #content { overflow: hidden; } ``` 处理后效果： 防止 margin 重叠代码： ```html &lt;style&gt; #div1, #div2 { height: 50px; background: #ccf; margin: 25px; } &lt;/style&gt; &lt;body&gt; &lt;div id=&quot;div1&quot;&gt; div 1&lt;/div&gt; &lt;div id=&quot;div2&quot;&gt; div 2&lt;/div&gt; &lt;/body&gt; ``` 原始效果：（margin 发生了重叠，只有 25px） 根据 BFC 布局规则，给 div2 套一层容器，病触发该容器生成 BFC，防止 margin 重叠： ```html &lt;div style=&quot;overflow: hidden&quot;&gt; &lt;div id=&quot;div2&quot;&gt; div 2&lt;/div&gt; &lt;/div&gt; ``` 处理后效果：（margin 变成了 50px） 参考链接MDN链接一链接二]]></content>
