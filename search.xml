@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[BFC]]></title>
     <url>%2F2018%2F03%2F29%2FBFC%2F</url>
-    <content type="text"><![CDATA[BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。原始效果：]]></content>
+    <content type="text"><![CDATA[BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。 生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed overflow 不为 visible display为inline-block, table-cell, table-caption, flex, inline-flex 其它 BFC 布局规则 BFC 是页面上一个独立的容器，里面的子元素不会再布局上影响到外面的元素，反之也是如此 创建了 BFC 的元素不会与浮动元素重叠 计算 BFC 高度时，浮动元素也参与计算 BFC 中，每一个元素左外边与包含块的左边相接触（对于从左往右的格式化，否则相反），即使存在浮动 两个相邻的普通流中的块框在垂直位置的空白边会发生折叠现象。也就是处于同一个BFC中的两个垂直窗口的margin会重叠。 BFC 应用撑开父容器代码:123456789101112131415161718&lt;style&gt; #container &#123; width: 500px; border: 10px solid #aaf; &#125; .child &#123; width: 200px; height: 200px; border: 10px solid #88f; float: left; &#125;&lt;/style&gt;&lt;body&gt; &lt;div id="container"&gt; &lt;div class="child"&gt;float: left&lt;/div&gt; &lt;div class="child"&gt;float: left&lt;/div&gt; &lt;/div&gt;&lt;/body&gt; 原始效果：（父元素撑不起来，塌陷了）根据 BFC 的知识，可以给让父元素生成 BFC 解决问题，添加如下代码：123#container &#123; overflow: hidden;&#125; 效果图：]]></content>
       <categories>
         <category>CSS</category>
       </categories>
