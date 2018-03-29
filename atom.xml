@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://minejoy.github.io/"/>
-  <updated>2018-03-29T11:21:24.052Z</updated>
+  <updated>2018-03-29T15:11:53.846Z</updated>
   <id>http://minejoy.github.io/</id>
   
   <author>
@@ -15,95 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://minejoy.github.io/2018/03/29/BFC/%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80/"/>
-    <id>http://minejoy.github.io/2018/03/29/BFC/两栏布局/</id>
-    <published>2018-03-29T15:15:09.309Z</published>
-    <updated>2018-03-29T11:21:24.052Z</updated>
-    
-    <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><style>body {width: 500px;position: relative;}.aside {width: 100px;height: 180px;float: left;background: #33f;}.main {height: 200px;background: #ccf;overflow: hidden;}</style></head><body style="background: #f8f8f8; font-size: 22px;"><div class="aside">float: left;</div><div class="main">内容区被覆盖了一部分</div></body></html>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-	&lt;meta charset=&quot;UTF-8&quot;&gt;
-	&lt;title&gt;Document&lt;/title&gt;
-	&lt;style&gt;
-		body {
-			width: 500px;
-			position: rel
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://minejoy.github.io/2018/03/29/BFC/%E6%92%91%E5%BC%80%E7%88%B6%E5%AE%B9%E5%99%A8/"/>
-    <id>http://minejoy.github.io/2018/03/29/BFC/撑开父容器/</id>
-    <published>2018-03-29T15:15:09.309Z</published>
-    <updated>2018-03-29T10:29:49.700Z</updated>
-    
-    <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><style>#container {width: 500px;border: 10px solid #ccf;}.child {width: 200px;height: 200px;border: 10px solid #33f;float: left;font-size: 22px;}</style></head><body style="background: #f8f8f8"><div id="container"><div class="child">float: left;</div><div class="child">float: left;</div></div></body></html>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-	&lt;meta charset=&quot;UTF-8&quot;&gt;
-	&lt;title&gt;Document&lt;/title&gt;
-	&lt;style&gt;
-
-		#container {
-			width: 500px;
-			border
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://minejoy.github.io/2018/03/29/BFC/margin%E9%87%8D%E5%8F%A0/"/>
-    <id>http://minejoy.github.io/2018/03/29/BFC/margin重叠/</id>
-    <published>2018-03-29T15:15:09.293Z</published>
-    <updated>2018-03-29T10:29:49.700Z</updated>
-    
-    <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><style>#container {width: 500px;border: 10px solid #ccf;}.child {width: 200px;height: 200px;border: 10px solid #33f;float: left;font-size: 22px;}</style></head><body style="background: #f8f8f8"><div id="container"><div class="child">float: left;</div><div class="child">float: left;</div></div></body></html>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-	&lt;meta charset=&quot;UTF-8&quot;&gt;
-	&lt;title&gt;Document&lt;/title&gt;
-	&lt;style&gt;
-
-		#container {
-			width: 500px;
-			border
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>BFC</title>
