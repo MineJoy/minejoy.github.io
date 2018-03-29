@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://minejoy.github.io/"/>
-  <updated>2018-03-27T12:07:31.436Z</updated>
+  <updated>2018-03-29T10:29:49.700Z</updated>
   <id>http://minejoy.github.io/</id>
   
   <author>
@@ -17,21 +17,119 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>写作需知</title>
-    <link href="http://minejoy.github.io/2018/03/26/%E5%86%99%E4%BD%9C%E9%9C%80%E7%9F%A5/"/>
-    <id>http://minejoy.github.io/2018/03/26/写作需知/</id>
-    <published>2018-03-26T10:01:36.000Z</published>
-    <updated>2018-03-27T12:07:31.436Z</updated>
+    <title></title>
+    <link href="http://minejoy.github.io/2018/03/29/BFC/margin%E9%87%8D%E5%8F%A0/"/>
+    <id>http://minejoy.github.io/2018/03/29/BFC/margin重叠/</id>
+    <published>2018-03-29T11:28:21.715Z</published>
+    <updated>2018-03-29T10:29:49.700Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://www.dummyimage.com/500x200" alt="占位符" style="border:none"></p><p></p><p class="description">这究竟是张怎样的图片？点击阅读全文知道背后的秘密。</p><a id="more"></a><p></p><h2 id="Hexo-官方"><a href="#Hexo-官方" class="headerlink" title="Hexo 官方"></a>Hexo 官方</h2><p>官方的基本操作介绍的非常好 <a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">Hexo</a></p><h2 id="创建新博客"><a href="#创建新博客" class="headerlink" title="创建新博客"></a>创建新博客</h2><pre><code>$ hexo new post/drafts/page 文件名</code></pre><p>注：</p><ol><li>不添加 layout 默认为 post，里面的文章会直接显示在页面，而设置为 drafts 不会显示在页面，可以通过 <code>$ hexo **publish** drafts 文件名</code> 将文件移动到 <code>source/_post</code> 文件夹中便可显示，注意这是个剪切操作。  </li><li>文件名不用加引号和后缀，默认生成 .md 后缀文件。命令也可不带文件名，会生成时间命名的文件  </li></ol><h2 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h2><p>使用上面的命令创建一个 .md 文件后，文件上方会生成以 <code>---</code> 分隔的区域，用于指定个别文件的变量参数。主要参数如下：  </p><table><thead><tr><th>title</th><th>date</th><th>tags</th><th>categories</th><th>comments</th><th>image</th></tr></thead><tbody><tr><td>默认为文件名</td><td>默认文件创立日期</td><td>数组方式写</td><td>分类</td><td>评论开关true,false</td><td>添加url</td></tr></tbody></table><h2 id="添加代码"><a href="#添加代码" class="headerlink" title="添加代码"></a>添加代码</h2><ol><li>行内样式：<br><code>inline code</code><br>两个上点 <code><code></code></code> 等价于 HTML 的 code 标签.</li><li>代码块样式：  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHalo</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">'Halo'</span> + name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><p>三个上点加 + 语言的名字 + 代码 + 三个上点（代码不好贴），相当于 pre 标签  </p><h2 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h2><p>Front-matter 里面已经配置好了，新建的.md，文件头部可插入图片，front-matter 以外配置的 HTML 标签也可插入图片。建议在标签里插图。（前者添加的图片只会在文章摘要显示，在全文里不显示）。</p><h2 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h2>这里的代码不会被解释。。。爽歪歪 。 。    **1. 啊啊啊2. 不不不##好多]]></content>
+    <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><style>#container {width: 500px;border: 10px solid #ccf;}.child {width: 200px;height: 200px;border: 10px solid #33f;float: left;font-size: 22px;}</style></head><body style="background: #f8f8f8"><div id="container"><div class="child">float: left;</div><div class="child">float: left;</div></div></body></html>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://www.dummyimage.com/500x200&quot; alt=&quot;占位符&quot; style=&quot;border:none&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;p class=&quot;description&quot;&gt;这究竟是张怎样的图片？点击阅读全文知道背后的秘密。&lt;/p&gt;
+      
+      
+        &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;UTF-8&quot;&gt;
+	&lt;title&gt;Document&lt;/title&gt;
+	&lt;style&gt;
+
+		#container {
+			width: 500px;
+			border
+      
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://minejoy.github.io/2018/03/29/BFC/%E4%B8%A4%E6%A0%8F%E5%B8%83%E5%B1%80/"/>
+    <id>http://minejoy.github.io/2018/03/29/BFC/两栏布局/</id>
+    <published>2018-03-29T11:28:04.157Z</published>
+    <updated>2018-03-29T11:21:24.052Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><style>body {width: 500px;position: relative;}.aside {width: 100px;height: 180px;float: left;background: #33f;}.main {height: 200px;background: #ccf;overflow: hidden;}</style></head><body style="background: #f8f8f8; font-size: 22px;"><div class="aside">float: left;</div><div class="main">内容区被覆盖了一部分</div></body></html>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;UTF-8&quot;&gt;
+	&lt;title&gt;Document&lt;/title&gt;
+	&lt;style&gt;
+		body {
+			width: 500px;
+			position: rel
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://minejoy.github.io/2018/03/29/BFC/%E6%92%91%E5%BC%80%E7%88%B6%E5%AE%B9%E5%99%A8/"/>
+    <id>http://minejoy.github.io/2018/03/29/BFC/撑开父容器/</id>
+    <published>2018-03-29T10:58:52.409Z</published>
+    <updated>2018-03-29T10:29:49.700Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><style>#container {width: 500px;border: 10px solid #ccf;}.child {width: 200px;height: 200px;border: 10px solid #33f;float: left;font-size: 22px;}</style></head><body style="background: #f8f8f8"><div id="container"><div class="child">float: left;</div><div class="child">float: left;</div></div></body></html>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;UTF-8&quot;&gt;
+	&lt;title&gt;Document&lt;/title&gt;
+	&lt;style&gt;
+
+		#container {
+			width: 500px;
+			border
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>BFC</title>
+    <link href="http://minejoy.github.io/2018/03/29/BFC/"/>
+    <id>http://minejoy.github.io/2018/03/29/BFC/</id>
+    <published>2018-03-29T08:40:08.000Z</published>
+    <updated>2018-03-29T11:53:30.122Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="BFC-是什么？"><a href="#BFC-是什么？" class="headerlink" title="BFC 是什么？"></a>BFC 是什么？</h2><blockquote><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context" target="_blank" rel="noopener">块级格式化上下文</a>(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。  </p></blockquote><h2 id="生成-BFC"><a href="#生成-BFC" class="headerlink" title="生成 BFC"></a>生成 BFC</h2><ul><li>根元素或包含根元素的元素</li><li>浮动元素（即元素的 float 不为none）</li><li>绝对定位元素（即元素的 position 为 absolute 或 fixed</li><li>overflow <strong>不为 visible</strong></li><li>display为inline-block, table-cell, table-caption, flex, inline-flex</li><li>其它</li></ul><h2 id="BFC-布局规则"><a href="#BFC-布局规则" class="headerlink" title="BFC 布局规则"></a>BFC 布局规则</h2><ol><li>BFC 是页面上一个独立的容器，里面的子元素不会再布局上影响到外面的元素，反之也是如此</li><li>创建了 BFC 的元素不会与浮动元素重叠</li><li>计算 BFC 高度时，浮动元素也参与计算</li><li>BFC 中，每一个元素左外边与包含块的左边相接触（对于从左往右的格式化，否则相反），即使存在浮动</li><li></li></ol><h2 id="BFC-应用"><a href="#BFC-应用" class="headerlink" title="BFC 应用"></a>BFC 应用</h2><h3 id="撑开父容器"><a href="#撑开父容器" class="headerlink" title="撑开父容器"></a>撑开父容器</h3><p>代码:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        #container &#123;</span></span><br><span class="line"><span class="undefined">            width: 500px;</span></span><br><span class="line"><span class="undefined">            border: 10px solid #aaf;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .child &#123;</span></span><br><span class="line"><span class="undefined">            width: 200px;</span></span><br><span class="line"><span class="undefined">            height: 200px;</span></span><br><span class="line"><span class="undefined">            border: 10px solid #88f;</span></span><br><span class="line"><span class="undefined">            float: left;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span>float: left;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span>float: left;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p><p>原始效果：<br><img src="./BFC/塌陷.PNG" alt="效果图"><br>为了解决父容器塌陷的问题，可以让其生成 BFC，添加如下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">#container &#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">&#125;</span><br><span class="line">```  </span><br><span class="line">处理后效果：  </span><br><span class="line">![效果图](./BFC/塌陷处理.PNG)  </span><br><span class="line"></span><br><span class="line">### 两栏布局</span><br><span class="line">代码：</span><br><span class="line">```html</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body &#123;</span><br><span class="line">        width: 500px;</span><br><span class="line">        position: relative;</span><br><span class="line">    &#125;</span><br><span class="line">    .sidebar &#123;</span><br><span class="line">        width: 100px;</span><br><span class="line">        height: 180px;</span><br><span class="line">        float: left;</span><br><span class="line">        background: #33f;</span><br><span class="line">    &#125;</span><br><span class="line">    .content &#123;</span><br><span class="line">        height: 200px;</span><br><span class="line">        background: #ccf;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;sidebar&quot;&gt;float: left;&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;content&quot;&gt;内容区被覆盖了一部分&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">```  </span><br><span class="line">原始效果：  </span><br><span class="line">![](./BFC/重叠.PNG)  </span><br><span class="line">可以生成 BFC，实现两栏布局，添加如下代码：</span><br><span class="line">```css</span><br><span class="line">#content &#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>处理后效果：<br><img src="./BFC/重叠处理.PNG" alt="">  </p><h3 id="防止-margin-重叠"><a href="#防止-margin-重叠" class="headerlink" title="防止 margin 重叠"></a>防止 margin 重叠</h3><p>代码：  </p><pre><code class="html"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span><span class="undefined">    #div1, #div2 {</span><span class="undefined">        height: 50px;</span><span class="undefined">        background: #ccf;</span><span class="undefined">        margin: 25px;</span><span class="undefined">    }</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span><span class="tag">&lt;<span class="name">body</span>&gt;</span>    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div1"</span>&gt;</span> div 1<span class="tag">&lt;/<span class="name">div</span>&gt;</span>    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span>&gt;</span> div 2<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></code></pre><p>原始效果：（margin 发生了重叠，只有 25px）<br><img src="./BFC/margin重叠.PNG" alt=""><br>根据 BFC 布局规则，给 div2 套一层容器，病触发该容器生成 BFC，防止 margin 重叠：</p><pre><code class="html"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"overflow: hidden"</span>&gt;</span>    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span>&gt;</span> div 2<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></code></pre><p>处理后效果：（margin 变成了 50px）<br><img src="./BFC/margin未重叠.PNG" alt=""></p><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://www.cnblogs.com/pigtail/archive/2013/01/23/2871627.html" target="_blank" rel="noopener">链接一</a><br><a href="https://www.cnblogs.com/lhb25/p/inside-block-formatting-ontext.html" target="_blank" rel="noopener">链接二</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;BFC-是什么？&quot;&gt;&lt;a href=&quot;#BFC-是什么？&quot; class=&quot;headerlink&quot; title=&quot;BFC 是什么？&quot;&gt;&lt;/a&gt;BFC 是什么？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozill
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://minejoy.github.io/categories/CSS/"/>
+    
+    
+      <category term="布局" scheme="http://minejoy.github.io/tags/%E5%B8%83%E5%B1%80/"/>
+    
+      <category term="清除浮动" scheme="http://minejoy.github.io/tags/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"/>
     
   </entry>
   

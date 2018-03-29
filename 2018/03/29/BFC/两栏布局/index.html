@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="这究竟是张怎样的图片？点击阅读全文知道背后的秘密。">
+<meta name="description" content="Document 	 		body { 			width: 500px; 			position: relative; 		} 		.aside { 			width: 100px; 			height: 180px; 			float: left; 			background: #33f; 		} 		.main { 			height: 200px; 			background:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="写作需知">
-<meta property="og:url" content="http://minejoy.github.io/2018/03/26/写作需知/index.html">
+<meta property="og:title" content="MineJoy">
+<meta property="og:url" content="http://minejoy.github.io/2018/03/29/BFC/两栏布局/index.html">
 <meta property="og:site_name" content="MineJoy">
-<meta property="og:description" content="这究竟是张怎样的图片？点击阅读全文知道背后的秘密。">
+<meta property="og:description" content="Document 	 		body { 			width: 500px; 			position: relative; 		} 		.aside { 			width: 100px; 			height: 180px; 			float: left; 			background: #33f; 		} 		.main { 			height: 200px; 			background:">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://www.dummyimage.com/500x200">
-<meta property="og:updated_time" content="2018-03-27T12:07:31.436Z">
+<meta property="og:updated_time" content="2018-03-29T11:21:24.052Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="写作需知">
-<meta name="twitter:description" content="这究竟是张怎样的图片？点击阅读全文知道背后的秘密。">
-<meta name="twitter:image" content="https://www.dummyimage.com/500x200">
+<meta name="twitter:title" content="MineJoy">
+<meta name="twitter:description" content="Document 	 		body { 			width: 500px; 			position: relative; 		} 		.aside { 			width: 100px; 			height: 180px; 			float: left; 			background: #33f; 		} 		.main { 			height: 200px; 			background:">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://minejoy.github.io/2018/03/26/写作需知/"/>
+  <link rel="canonical" href="http://minejoy.github.io/2018/03/29/BFC/两栏布局/"/>
 
 
 
 
 
-  <title>写作需知 | MineJoy</title>
+  <title> | MineJoy</title>
   
 
 
@@ -308,7 +306,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://minejoy.github.io/2018/03/26/写作需知/">
+    <link itemprop="mainEntityOfPage" href="http://minejoy.github.io/2018/03/29/BFC/两栏布局/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="鱼梁木">
@@ -325,7 +323,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">写作需知</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -337,8 +335,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-26T18:01:36+08:00">
-                2018-03-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-29T19:28:04+08:00">
+                2018-03-29
               </time>
             
 
@@ -380,54 +378,35 @@
       
 
       
-        <p><img src="https://www.dummyimage.com/500x200" alt="占位符" style="border:none"></p>
-<p></p><p class="description">这究竟是张怎样的图片？点击阅读全文知道背后的秘密。</p><a id="more"></a><p></p>
-<h2 id="Hexo-官方"><a href="#Hexo-官方" class="headerlink" title="Hexo 官方"></a>Hexo 官方</h2><p>官方的基本操作介绍的非常好 <a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">Hexo</a></p>
-<h2 id="创建新博客"><a href="#创建新博客" class="headerlink" title="创建新博客"></a>创建新博客</h2><pre><code>$ hexo new post/drafts/page 文件名
-</code></pre><p>注：</p>
-<ol>
-<li>不添加 layout 默认为 post，里面的文章会直接显示在页面，而设置为 drafts 不会显示在页面，可以通过 <code>$ hexo **publish** drafts 文件名</code> 将文件移动到 <code>source/_post</code> 文件夹中便可显示，注意这是个剪切操作。  </li>
-<li>文件名不用加引号和后缀，默认生成 .md 后缀文件。命令也可不带文件名，会生成时间命名的文件  </li>
-</ol>
-<h2 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h2><p>使用上面的命令创建一个 .md 文件后，文件上方会生成以 <code>---</code> 分隔的区域，用于指定个别文件的变量参数。主要参数如下：  </p>
-<table>
-<thead>
-<tr>
-<th>title</th>
-<th>date</th>
-<th>tags</th>
-<th>categories</th>
-<th>comments</th>
-<th>image</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>默认为文件名</td>
-<td>默认文件创立日期</td>
-<td>数组方式写</td>
-<td>分类</td>
-<td>评论开关true,false</td>
-<td>添加url</td>
-</tr>
-</tbody>
-</table>
-<h2 id="添加代码"><a href="#添加代码" class="headerlink" title="添加代码"></a>添加代码</h2><ol>
-<li>行内样式：<br><code>inline code</code><br>两个上点 <code><code></code></code> 等价于 HTML 的 code 标签.</li>
-<li>代码块样式：  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHalo</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">'Halo'</span> + name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>三个上点加 + 语言的名字 + 代码 + 三个上点（代码不好贴），相当于 pre 标签  </p>
-<h2 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h2><p>Front-matter 里面已经配置好了，新建的.md，文件头部可插入图片，front-matter 以外配置的 HTML 标签也可插入图片。建议在标签里插图。（前者添加的图片只会在文章摘要显示，在全文里不显示）。</p>
-<h2 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h2>
-这里的代码不会被解释。。。爽歪歪 。 。    **
-1. 啊啊啊
-2. 不不不
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			width: 500px;
+			position: relative;
+		}
+		.aside {
+			width: 100px;
+			height: 180px;
+			float: left;
+			background: #33f;
+		}
+		.main {
+			height: 200px;
+			background: #ccf;
+			overflow: hidden;
+		}
+	</style>
 
-##好多
-
-
-
+</head>
+<body style="background: #f8f8f8; font-size: 22px;">
+	<div class="aside">float: left;</div>
+	<div class="main">内容区被覆盖了一部分</div>
+</body>
+</html>
       
     </div>
     
@@ -451,8 +430,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/25/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/03/29/BFC/撑开父容器/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
               </a>
             
           </div>
@@ -460,6 +439,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/29/BFC/margin重叠/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -518,17 +501,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -549,7 +523,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -560,7 +534,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -571,7 +545,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -636,22 +610,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-官方"><span class="nav-number">1.</span> <span class="nav-text">Hexo 官方</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建新博客"><span class="nav-number">2.</span> <span class="nav-text">创建新博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Front-matter"><span class="nav-number">3.</span> <span class="nav-text">Front-matter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加代码"><span class="nav-number">4.</span> <span class="nav-text">添加代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加图片"><span class="nav-number">5.</span> <span class="nav-text">添加图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入"><span class="nav-number">6.</span> <span class="nav-text">插入</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

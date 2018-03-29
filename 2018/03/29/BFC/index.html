@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="鱼梁木, minejoy, MineJoy, yuliangmu, 博客， 鱼梁木的博客" />
+  <meta name="keywords" content="布局,清除浮动," />
 
 
 
@@ -79,17 +79,23 @@
 
 
 
-<meta name="description" content="You are my joy !">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://minejoy.github.io/categories/index.html">
+<meta name="description" content="BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。    生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed overflow">
+<meta name="keywords" content="布局,清除浮动">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BFC">
+<meta property="og:url" content="http://minejoy.github.io/2018/03/29/BFC/index.html">
 <meta property="og:site_name" content="MineJoy">
-<meta property="og:description" content="You are my joy !">
+<meta property="og:description" content="BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。    生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed overflow">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-25T12:35:46.909Z">
+<meta property="og:image" content="http://minejoy.github.io/2018/03/29/BFC/BFC/塌陷.PNG">
+<meta property="og:image" content="http://minejoy.github.io/2018/03/29/BFC/BFC/重叠处理.PNG">
+<meta property="og:image" content="http://minejoy.github.io/2018/03/29/BFC/BFC/margin重叠.PNG">
+<meta property="og:image" content="http://minejoy.github.io/2018/03/29/BFC/BFC/margin未重叠.PNG">
+<meta property="og:updated_time" content="2018-03-29T11:53:30.122Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="You are my joy !">
+<meta name="twitter:title" content="BFC">
+<meta name="twitter:description" content="BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。    生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed overflow">
+<meta name="twitter:image" content="http://minejoy.github.io/2018/03/29/BFC/BFC/塌陷.PNG">
 
 
 
@@ -119,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://minejoy.github.io/categories/"/>
+  <link rel="canonical" href="http://minejoy.github.io/2018/03/29/BFC/"/>
 
 
 
 
 
-  <title>categories | MineJoy</title>
+  <title>BFC | MineJoy</title>
   
 
 
@@ -294,40 +300,218 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://minejoy.github.io/2018/03/29/BFC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="鱼梁木">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MineJoy">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 2 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/软件操作/">软件操作</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">BFC</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-29T16:40:08+08:00">
+                2018-03-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="BFC-是什么？"><a href="#BFC-是什么？" class="headerlink" title="BFC 是什么？"></a>BFC 是什么？</h2><blockquote>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context" target="_blank" rel="noopener">块级格式化上下文</a>(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。  </p>
+</blockquote>
+<h2 id="生成-BFC"><a href="#生成-BFC" class="headerlink" title="生成 BFC"></a>生成 BFC</h2><ul>
+<li>根元素或包含根元素的元素</li>
+<li>浮动元素（即元素的 float 不为none）</li>
+<li>绝对定位元素（即元素的 position 为 absolute 或 fixed</li>
+<li>overflow <strong>不为 visible</strong></li>
+<li>display为inline-block, table-cell, table-caption, flex, inline-flex</li>
+<li>其它</li>
+</ul>
+<h2 id="BFC-布局规则"><a href="#BFC-布局规则" class="headerlink" title="BFC 布局规则"></a>BFC 布局规则</h2><ol>
+<li>BFC 是页面上一个独立的容器，里面的子元素不会再布局上影响到外面的元素，反之也是如此</li>
+<li>创建了 BFC 的元素不会与浮动元素重叠</li>
+<li>计算 BFC 高度时，浮动元素也参与计算</li>
+<li>BFC 中，每一个元素左外边与包含块的左边相接触（对于从左往右的格式化，否则相反），即使存在浮动</li>
+<li></li>
+</ol>
+<h2 id="BFC-应用"><a href="#BFC-应用" class="headerlink" title="BFC 应用"></a>BFC 应用</h2><h3 id="撑开父容器"><a href="#撑开父容器" class="headerlink" title="撑开父容器"></a>撑开父容器</h3><p>代码:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        #container &#123;</span></span><br><span class="line"><span class="undefined">            width: 500px;</span></span><br><span class="line"><span class="undefined">            border: 10px solid #aaf;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .child &#123;</span></span><br><span class="line"><span class="undefined">            width: 200px;</span></span><br><span class="line"><span class="undefined">            height: 200px;</span></span><br><span class="line"><span class="undefined">            border: 10px solid #88f;</span></span><br><span class="line"><span class="undefined">            float: left;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span>float: left;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span>float: left;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>原始效果：<br><img src="./BFC/塌陷.PNG" alt="效果图"><br>为了解决父容器塌陷的问题，可以让其生成 BFC，添加如下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">#container &#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">&#125;</span><br><span class="line">```  </span><br><span class="line">处理后效果：  </span><br><span class="line">![效果图](./BFC/塌陷处理.PNG)  </span><br><span class="line"></span><br><span class="line">### 两栏布局</span><br><span class="line">代码：</span><br><span class="line">```html</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body &#123;</span><br><span class="line">        width: 500px;</span><br><span class="line">        position: relative;</span><br><span class="line">    &#125;</span><br><span class="line">    .sidebar &#123;</span><br><span class="line">        width: 100px;</span><br><span class="line">        height: 180px;</span><br><span class="line">        float: left;</span><br><span class="line">        background: #33f;</span><br><span class="line">    &#125;</span><br><span class="line">    .content &#123;</span><br><span class="line">        height: 200px;</span><br><span class="line">        background: #ccf;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;sidebar&quot;&gt;float: left;&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;content&quot;&gt;内容区被覆盖了一部分&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">```  </span><br><span class="line">原始效果：  </span><br><span class="line">![](./BFC/重叠.PNG)  </span><br><span class="line">可以生成 BFC，实现两栏布局，添加如下代码：</span><br><span class="line">```css</span><br><span class="line">#content &#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>处理后效果：<br><img src="./BFC/重叠处理.PNG" alt="">  </p>
+<h3 id="防止-margin-重叠"><a href="#防止-margin-重叠" class="headerlink" title="防止 margin 重叠"></a>防止 margin 重叠</h3><p>代码：  </p>
+<pre><code class="html"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span>
+<span class="undefined">    #div1, #div2 {</span>
+<span class="undefined">        height: 50px;</span>
+<span class="undefined">        background: #ccf;</span>
+<span class="undefined">        margin: 25px;</span>
+<span class="undefined">    }</span>
+<span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>
+
+<span class="tag">&lt;<span class="name">body</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div1"</span>&gt;</span> div 1<span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span>&gt;</span> div 2<span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">body</span>&gt;</span>
+</code></pre>
+<p>原始效果：（margin 发生了重叠，只有 25px）<br><img src="./BFC/margin重叠.PNG" alt=""><br>根据 BFC 布局规则，给 div2 套一层容器，病触发该容器生成 BFC，防止 margin 重叠：</p>
+<pre><code class="html"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"overflow: hidden"</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span>&gt;</span> div 2<span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+</code></pre>
+<p>处理后效果：（margin 变成了 50px）<br><img src="./BFC/margin未重叠.PNG" alt=""></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://www.cnblogs.com/pigtail/archive/2013/01/23/2871627.html" target="_blank" rel="noopener">链接一</a><br><a href="https://www.cnblogs.com/lhb25/p/inside-block-formatting-ontext.html" target="_blank" rel="noopener">链接二</a></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/布局/" rel="tag"><i class="fa fa-tag"></i> 布局</a>
+          
+            <a href="/tags/清除浮动/" rel="tag"><i class="fa fa-tag"></i> 清除浮动</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/25/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/29/BFC/撑开父容器/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -336,6 +520,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDkwMS8xMTQzOA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -358,8 +551,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -467,6 +669,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#BFC-是什么？"><span class="nav-number">1.</span> <span class="nav-text">BFC 是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成-BFC"><span class="nav-number">2.</span> <span class="nav-text">生成 BFC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BFC-布局规则"><span class="nav-number">3.</span> <span class="nav-text">BFC 布局规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BFC-应用"><span class="nav-number">4.</span> <span class="nav-text">BFC 应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#撑开父容器"><span class="nav-number">4.1.</span> <span class="nav-text">撑开父容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#防止-margin-重叠"><span class="nav-number">4.2.</span> <span class="nav-text">防止 margin 重叠</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">5.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -634,6 +852,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
