@@ -453,7 +453,7 @@ body {
   }
 }
 .main {
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 .main-inner {
   margin: 0 auto;
@@ -469,7 +469,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  min-height: 50px;
+  min-height: 20px;
 }
 .footer-inner {
   box-sizing: border-box;
@@ -1816,7 +1816,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e05c7d;
+  background: #cb8a60;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2916,6 +2916,23 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+body {
+  background-image: url("/images/bg4.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+}
+#menu a {
+  font-size: 14px;
+}
+#content .post {
+  padding: 8px 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+}
+.posts-expand .post {
+  margin-top: 50px;
 }
 .site-author-image {
   border: none;

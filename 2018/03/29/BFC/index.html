@@ -79,25 +79,25 @@
 
 
 
-<meta name="description" content="BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。  生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed overflow 不">
+<meta name="description" content="BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。  生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed） overflow">
 <meta name="keywords" content="布局,清除浮动">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BFC">
-<meta property="og:url" content="http://minejoy.github.io/2018/03/29/BFC/index.html">
+<meta property="og:url" content="http://www.minejoy.me/2018/03/29/BFC/index.html">
 <meta property="og:site_name" content="MineJoy">
-<meta property="og:description" content="BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。  生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed overflow 不">
+<meta property="og:description" content="BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。  生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed） overflow">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://minejoy.github.io/2018/03/29/BFC/塌陷.PNG">
-<meta property="og:image" content="http://minejoy.github.io/2018/03/29/BFC/塌陷处理.PNG">
-<meta property="og:image" content="http://minejoy.github.io/2018/03/29/BFC/重叠.PNG">
-<meta property="og:image" content="http://minejoy.github.io/2018/03/29/BFC/重叠处理.PNG">
-<meta property="og:image" content="http://minejoy.github.io/2018/03/29/BFC/margin重叠.PNG">
-<meta property="og:image" content="http://minejoy.github.io/2018/03/29/BFC/margin未重叠.PNG">
-<meta property="og:updated_time" content="2018-03-29T15:11:53.846Z">
+<meta property="og:image" content="http://www.minejoy.me/2018/03/29/BFC/塌陷.PNG">
+<meta property="og:image" content="http://www.minejoy.me/2018/03/29/BFC/塌陷处理.PNG">
+<meta property="og:image" content="http://www.minejoy.me/2018/03/29/BFC/重叠.PNG">
+<meta property="og:image" content="http://www.minejoy.me/2018/03/29/BFC/重叠处理.PNG">
+<meta property="og:image" content="http://www.minejoy.me/2018/03/29/BFC/margin重叠.PNG">
+<meta property="og:image" content="http://www.minejoy.me/2018/03/29/BFC/margin未重叠.PNG">
+<meta property="og:updated_time" content="2018-03-31T07:38:02.888Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BFC">
-<meta name="twitter:description" content="BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。  生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed overflow 不">
-<meta name="twitter:image" content="http://minejoy.github.io/2018/03/29/BFC/塌陷.PNG">
+<meta name="twitter:description" content="BFC 是什么？ 块级格式化上下文(Block Formatting Context, BFC)，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。  生成 BFC 根元素或包含根元素的元素 浮动元素（即元素的 float 不为none） 绝对定位元素（即元素的 position 为 absolute 或 fixed） overflow">
+<meta name="twitter:image" content="http://www.minejoy.me/2018/03/29/BFC/塌陷.PNG">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="http://minejoy.github.io/2018/03/29/BFC/"/>
+  <link rel="canonical" href="http://www.minejoy.me/2018/03/29/BFC/"/>
 
 
 
@@ -227,26 +227,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
 
       
         <li class="menu-item menu-item-search">
@@ -314,7 +294,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://minejoy.github.io/2018/03/29/BFC/">
+    <link itemprop="mainEntityOfPage" href="http://www.minejoy.me/2018/03/29/BFC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="鱼梁木">
@@ -414,7 +394,7 @@
 <h2 id="生成-BFC"><a href="#生成-BFC" class="headerlink" title="生成 BFC"></a>生成 BFC</h2><ul>
 <li>根元素或包含根元素的元素</li>
 <li>浮动元素（即元素的 float 不为none）</li>
-<li>绝对定位元素（即元素的 position 为 absolute 或 fixed</li>
+<li>绝对定位元素（即元素的 position 为 absolute 或 fixed）</li>
 <li>overflow <strong>不为 visible</strong></li>
 <li>display为inline-block, table-cell, table-caption, flex, inline-flex</li>
 <li>其它</li>
@@ -477,6 +457,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/03/行内块元素空白间隙/" rel="prev" title="空白间隙">
+                空白间隙 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -549,11 +533,11 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-            <a href="/" class="site-author-image" rel="start" style="border:none">
-              <img class="site-author-image" itemprop="image"
-                src="/uploads/avatar.jpg"
-                alt="鱼梁木" />
-                </a>
+              <a href="/about" class="site-author-image" rel="start" style="border:none">
+                <img class="site-author-image" itemprop="image"
+                  src="/uploads/avatar.jpg"
+                  alt="鱼梁木" />
+              </a>
             
               <p class="site-author-name" itemprop="name">鱼梁木</p>
               <p class="site-description motion-element" itemprop="description">You are my joy !</p>
@@ -566,7 +550,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -588,7 +572,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -641,7 +625,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.baidu.com/" title="百度" target="_blank">百度</a>
+                    <a href="https://www.baidu.com/" title="断网测试" target="_blank">断网测试</a>
                   </li>
                 
               </ul>
